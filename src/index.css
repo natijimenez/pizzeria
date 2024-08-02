@@ -1,0 +1,185 @@
+:root {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    --font: Verdana, Geneva, Tahoma, sans-serif;
+    --white: #ffffff;
+    --dark: #212529;
+    --gray: #e8e8e8;
+    --blue: #119cb1;
+}
+
+* {
+
+    color: var(--white);
+    font-family: var(--font);
+}
+
+/*ESTILOS NAVBAR*/
+.navigation-bar {
+    background-color: var(--dark);
+    color: var(--white);
+}
+
+.nav-btn {
+    color: var(--white);
+    text-decoration: none;
+    border-radius: 5px;
+    background-color: none;
+    padding: 5px;
+    margin: 0 5px;
+    font-size: 0.8rem;
+}
+
+.nav-btn-total {
+    color: var(--blue);
+    text-decoration: none;
+    border-radius: 5px;
+    background-color: none;
+    padding: 5px;
+    margin: 0 5px;
+    font-size: 0.8rem;
+}
+
+/*ESTILOS HEADER*/
+.banner-container {
+    background-image: url('./assets/img/banner/banner-pizzeria.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 350px;
+}
+
+hr {
+    height: 0.7px;
+    width: 100%;
+    background-color: var(--white);
+    opacity: 100%;
+}
+
+/*ESTILOS HEADER */
+.banner-texto {
+    text-align: center;
+}
+
+/*ESTILOS CARDS*/
+.cards-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    color: var(--gray);
+    padding-top: 75px;
+}
+
+.card-title,
+.card-title-ingredients,
+.card-ingredients,
+.card-price,
+.card-btn {
+    color: var(--dark);
+}
+
+.card-name {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.card-title-ingredients {
+    font-size: 1rem;
+    height: 100px;
+    text-align: center;
+    font-weight: 300;
+}
+
+.card-ingredients {
+    font-size: 0.8rem;
+    text-align: center;
+    font-weight: 300;
+}
+
+.card-price {
+    font-size: 1.1rem;
+    text-align: center;
+    font-weight: 600;
+}
+
+.card-btns-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.card-btn-more,
+.card-btn-add {
+    text-decoration: none;
+    border: 2px solid var(--dark);
+    padding: 7px;
+    border-radius: 5px;
+    font-size: 0.8rem;
+}
+
+.card-btn-more {
+    color: var(--dark);
+}
+
+.card-btn-add {
+    background-color: var(--dark);
+    color: var(--white);
+}
+
+.footer-section {
+    padding-top: 75px;
+    font-size: 0.8rem;
+
+}
+
+.footer {
+    width: 100%;
+    background-color: var(--dark);
+    color: var(--white);
+    text-align: center;
+    padding: 20px 0;
+    margin: 0;
+}
+
+.switchToken{
+    display: none;
+}
+
+@media (min-width: 768px) {
+
+    /*ESTILOS NAVBAR*/
+    .nav-btn {
+        border: 1px solid var(--white);
+    }
+
+    .nav-btn-total {
+        border: 1px solid var(--blue);
+    }
+
+    .nav-btn:hover {
+        color: var(--blue);
+        border-color: var(--blue);
+    }
+
+    .nav-btn-total:hover {
+        color: var(--gray);
+        border-color: var(--gray);
+    }
+
+    /*ESTILOS CARDS*/
+    .cards-container {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .card-btn-more:hover {
+        color: var(--blue);
+        border-color: var(--blue);
+    }
+
+    .card-btn-add:hover {
+        background-color: var(--blue);
+        border-color: var(--blue);
+    }
+}
